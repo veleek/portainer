@@ -329,6 +329,13 @@ input[type='checkbox'] {
   margin-bottom: 80px;
 }
 
+/* Bootstrap's .container has no width below 768px, so as a flex item of .page-wrapper it shrinks to fit its content */
+@media (max-width: 767px) {
+  .simple-box {
+    width: 100%;
+  }
+}
+
 .simple-box > div:first-child {
   padding-bottom: 10px;
 }
